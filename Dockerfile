@@ -3,8 +3,8 @@ LABEL maintainer="DK Corp"
 
 ENV PYTHONUNBUFFERED 1
 
-COPY ./Pipfile /Pipfile
-RUN pip install -r /requirements
+COPY ./requirements.txt /requirements.txt
+RUN pip install -r /requirements.txt
 
 RUN mkdir /leadmanager
 WORKDIR /leadmanager
